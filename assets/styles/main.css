@@ -1,5 +1,5 @@
 body{
-    background-color: #c1aecf;
+    background-color: #E4E1F2;
 }
 nav{
     color: white;
@@ -36,7 +36,7 @@ h1{
 }
 
 .sign-up h1{
-    color: 	#8369b3;
+    color: 	#757BC8;
 }
 
 .onboarding-form{
@@ -64,8 +64,8 @@ h1{
 }
 
 .form-button{
-    background-color: #8369b3;
-    border:1px solid #8369b3;
+    background-color: #757BC8;
+    border:1px solid #757BC8;
     margin-top: 1rem;
     border-radius: 5px;
     color: white;
@@ -79,12 +79,12 @@ h1{
 }
 
 input[type="submit"].form-button {
-    border:1px solid #8369b3;
+    border:1px solid #757BC8;
   }
 
 input[type="submit"].form-button:hover {
     background-color:white;
-    color: #8369b3;
+    color: #757BC8;
   }
 
 form i {
