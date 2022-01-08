@@ -8,7 +8,7 @@ function logSubmitStepOne(event) {
   }
 
 function logSubmitStepTwo(event) {
-    alert("DONE");
+    window.open("./fields_of_interest1.html","_self")
     event.preventDefault();
   }
   
