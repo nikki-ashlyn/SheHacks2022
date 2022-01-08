@@ -1,3 +1,6 @@
+body{
+    background-color: #c1aecf;
+}
 nav{
     color: white;
     position: relative;
@@ -7,16 +10,85 @@ nav{
     text-align: center;
 }
 
-footer{
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: black;
-    height: 8rem;
-    width: 100%;
-    text-align: center;
-}
 h1{
     text-align: center;
+}
+
+/* Sign Up Page */
+.flex-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.sign-up{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    width: 25rem;
+    margin-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.sign-up h1{
+    color: 	#8369b3;
+}
+
+.onboarding-form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bold{
+    align-self: flex-start;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+.form-text-input{
+    width: 100%;
+    padding: 0.75rem;
+    margin: 1rem;
+}
+
+.radio-button-row {
+    align-self: flex-start;
+    margin: 0.5rem;
+}
+
+.form-button{
+    background-color: #8369b3;
+    border:1px solid #8369b3;
+    margin-top: 1rem;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    font-weight: bold;
+    cursor:pointer;
+    transition: all 0.15s ease-in;
+
+}
+
+input[type="submit"].form-button {
+    border:1px solid #8369b3;
+  }
+
+input[type="submit"].form-button:hover {
+    background-color:white;
+    color: #8369b3;
+  }
+
+form i {
+    margin-top: -50px;
+    margin-right: -375px;
+    cursor: pointer;
 }
