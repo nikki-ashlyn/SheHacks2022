@@ -1,0 +1,116 @@
+/* Sign Up Page */
+.flex-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.sign-up{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    width: 25rem;
+    margin-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.sign-up h1{
+    color: 	#757BC8;
+}
+
+.display-none{
+    display: none !important;
+}
+
+.onboarding-form, .onboarding-form-2{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bold{
+    align-self: flex-start;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+.form-text-input{
+    width: 100%;
+    padding: 0.75rem;
+    margin: 1rem;
+}
+
+.radio-button-row {
+    align-self: flex-start;
+    margin: 0.5rem;
+}
+
+.form-button{
+    background-color: #757BC8;
+    border:1px solid #757BC8;
+    margin-top: 1rem;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    font-weight: bold;
+    cursor:pointer;
+    transition: all 0.15s ease-in;
+
+}
+
+input[type="submit"].form-button {
+    border:1px solid #757BC8;
+  }
+
+input[type="submit"].form-button:hover {
+    background-color:white;
+    color: #757BC8;
+  }
+
+form i {
+    margin-top: -50px;
+    margin-right: -375px;
+    cursor: pointer;
+}
+
+.default-profile-picture{
+    width: 10rem;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: #E4E1F2;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.detail{
+    margin:0.5rem;
+}
+.detail input{
+    border: none;
+    outline:none;
+    text-align: center;
+    background-color: #E4E1F2;
+    border-bottom: solid black 1px; 
+    margin-left: 2rem;
+}
+
+.detail label{
+    padding:0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color:white;
+    background-color:#757BC8;
+    border-radius: 5px;
+}

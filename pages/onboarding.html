@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SheHacks 2022 Onboarding</title>
     <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="../assets/styles/sign-up.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -14,8 +15,9 @@
 <body>
     <div class="flex-container">
         <div class="sign-up">
-            <h1>Sign Up</h1>
+            
             <form id="formOne" class="onboarding-form">
+                <h1>Sign Up</h1>
                 <input type="text" name="full-name" id="full-name" class="form-text-input" placeholder="Full Name*" required>
                 <input type="email" name="email" id="email" class="form-text-input" placeholder="E-Mail*" required>
                 <input type="password" name="password" id="password" class="form-text-input" placeholder="Password*" required>
@@ -51,7 +53,29 @@
 
                 <input type="submit" class="form-button" value="Sign Up!">
             </form>
-            <p>Already have an account? <a href="">Log in</a> </p>
+
+             <form id="formTwo" class="onboarding-form-2 display-none">
+                <h1>Finish Profile</h1>
+                <img class="default-profile-picture" src="../assets/images/default-user.png">
+                <h2>Welcome!</h2>
+
+                <div class="details">
+                    <div class="detail">
+                        <label for="grade">&nbsp; Grade &nbsp;&nbsp;</label>
+                        <input type="text"  id="grade"><br>
+                    </div>
+                    <div class="detail">
+                        <label for="location">Location</label>
+                        <input type="text"  id="location"><br>
+                    </div>
+                    <div class="detail">
+                        <label for="interests">Interests</label>
+                        <input type="text"  id="interests"><br>
+                    </div>
+
+                </div>
+                <input type="submit" class="form-button" value="Save">
+            </form> 
         </div>
     </div>
 </body>
