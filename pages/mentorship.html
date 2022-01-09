@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Mentorship </title>
+  <meta charset="UTF-8">
+  <meta name = "description" content = "Mentorship">
+  <meta name="author" content= "Cara Zou">
+  <link href = "mentorship.css" rel = "stylesheet">
+  <script src="mentorship.js" defer> </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+<header>
+<div id = "whitestrip">
+</div>
+</header>
+
+<div id = "signupbox">
+  <div id = "signuptext">
+<h1> Let's get to know you <br> a bit more ! </h1>
+
+<form method = "POST" action= "echo.cgi">
+<table>
+<tr> 
+  <td colspan="3"><label for= "mentorship" class="purple"> Mentorship Type  </label></td>
+</tr>
+<tr>
+  <td colspan="3">
+    <div class="select">
+    <select id="mentorship" name="mentorship">
+      <option style="display:none"></option>
+      <option value="career">Career</option>
+      <option value="interview">Interview</option>
+      <option value="Research">Research</option>
+      <option value="Academic">Academic</option>
+      <option value="General">General</option>
+    </select>
+  </div>
+  </td>
+</tr>
+<tr>
+  <td colspan="3"><label for= "hobby" class="purple"> Hobbies and Passions </label></td>
+</tr>
+<tr>
+  <td colspan="3">
+    <select id="hobby" name="hobby">
+      <option style="display:none"></option>
+      <option value="sports">Sports</option>
+      <option value="art">Art</option>
+      <option value="tech">Technology</option>
+      <option value="music">Music</option>
+      <option value="travel">Travel</option>
+    </select>
+  </td>
+</tr>
+<tr>
+  <td> <span class="purple" style="margin-bottom:0;"> Areas of Strength </span> <p style="margin : 0; padding-top:0;"><em> *Choose up to 3 </em></p><br></td>
+</tr> 
+<tr> 
+  <td> 
+    <input type="checkbox" id="student" name="situation" value="student" class="checkbox-round">
+    <label for="student">Leadership</label><br>
+  </td>
+  <td> 
+    <input type="checkbox" id="student" name="situation" value="student" class="checkbox-round">
+    <label for="student">Problem-solving</label><br>
+  </td>
+  <td> 
+    <input type="checkbox" id="student" name="situation" value="student" class="checkbox-round">
+    <label for="student">Interpersonal Skills</label><br>
+  </td>
+</tr>
+<tr> 
+  <td> 
+    <input type="checkbox" id="student" name="situation" value="student" class="checkbox-round">
+    <label for="student">Communication</label><br>
+  </td>
+  <td> 
+    <input type="checkbox" id="student" name="situation" value="student" class="checkbox-round">
+    <label for="student">Creativity</label><br>
+  </td>
+  <td> 
+    <input type="checkbox" id="student" name="situation" value="student" class="checkbox-round">
+    <label for="student">Versatility</label><br>
+  </td>
+</tr>
+
+
+<tr>
+  <td colspan="3" class = "center">
+   <br> <br> <br> <input type = "button" value = "Match!"/>
+ </td>
+</tr>
+
+</table>
+</form>
+
+<script> 
+$('input[type=checkbox]').on('change', function (e) {
+    if ($('input[type=checkbox]:checked').length > 3) {
+        $(this).prop('checked', false);
+    }
+});
+</script>
+
+</div>
+</div>
+
+</body>
+</html>
