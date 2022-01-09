@@ -40,7 +40,7 @@ def main():
                     mentor_sets_dict[mentee[0]].append(name)
                     
     # sort mentees so we can start with mentee with the smallest mentor set
-    sorted_mentor_sets = sorted(mentor_sets_dict, key=len)
+    sorted_mentor_sets = sorted(mentor_sets_dict, key=len, reverse=True)
         
     # create mentee dictionary for faster lookup
     mentee_dict = {}
